@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "step:types": "tsc",
-    "step:exports": "exports lib/**/*"
+    "step:build": "tsc",
+    "step:exports": "exports lib/**/*",
+    "build": "npm run step:build && npm run step:exports"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +13,20 @@
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "type": "module",
+  "types": "lib/index.d.ts",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "typesVersions": {
+    "*": {
+      "index": [
+        "lib/index.d.ts"
+      ]
+    }
+  },
+  "devDependencies": {
+    "@atomico/exports": "^1.4.0"
   }
 }

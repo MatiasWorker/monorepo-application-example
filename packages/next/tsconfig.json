@@ -1,14 +1,20 @@
 {
-    "include": ["pages/**/*"],
-    "compilerOptions": {
-      "jsx": "react-jsx",
-      "jsxImportSource": "react",
-      "target": "ESNext",
-      "module": "ESNext",
-      "moduleResolution": "node",
-      "allowJs": true,
-      "declaration": true,
-      "outDir": "lib",
-      "lib": ["ESNext", "DOM", "DOM.Iterable"]
-    }
-  }
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}
