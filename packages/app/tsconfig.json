@@ -1,0 +1,13 @@
+{
+    "include": ["src/**/*"],
+    "compilerOptions": {
+      "jsx": "react-jsx",
+      "target": "ESNext",
+      "module": "ESNext",
+      "moduleResolution": "node",
+      "allowJs": true,
+      "declaration": true,
+      "outDir": "lib",
+      "lib": ["ESNext", "DOM", "DOM.Iterable"]
+    }
+  }
